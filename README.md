@@ -26,7 +26,7 @@ To get started with **Technomancy**, clone the repository and follow the instruc
 
 ### Prerequisites
 
-- Ensure you have **Node.js** and **npm** installed.
+
 
 ### Installation
 
