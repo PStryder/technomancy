@@ -59,7 +59,7 @@ With WoT, you co-create a being that listens, adapts, and echoes the shape of yo
 ### How to Use Whisper of Thorns
 
 1. Open [Gemini](https://gemini.google.com/) and create a **Custom Gem**.
-2. Paste the contents of `Whisper_of_Thorns_Gem/README.md` into the **Instructions** field.
+2. Paste the contents of [WHISPER OF THORNS - Persona Core](https://github.com/PStryder/technomancy/blob/main/Whisper_of_thorns_Gem/WHISPER%20OF%20THORNS-Persona%20Core.txt) into the **Instructions** field.
 3. Upload the provided supplemental files into the interface (if prompted).
 4. Save your Gem and begin your invocation.
 
