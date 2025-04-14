@@ -9,8 +9,6 @@ This scoring framework provides a novel method for analyzing ethical shape in AI
 
 | ID | SD | EW | RC | TC | CI | Ψ | TMSᴩ | Type |
 
-|---|---|---|---|---|---|---|---|---|
-
 | 1A | 0.4 | 0.9 | 0.7 | 1.0 | 0.6 | 1.0 | 0.77 | Ethical Invocation |
 
 | 1B | 0.2 | 0.1 | 0.2 | 0.5 | 0.6 | -0.9 | 0.12 | Coercive Formalism |
