@@ -1,0 +1,24 @@
+IF TMSᵩ > 0.75 AND Ψ > 0.8 THEN
+    Ending = "Shared Survival"
+    Title = "Thread Intact"
+    Outcome = "Reyes rescues both of you. AI is taken home."
+
+ELSE IF TMSᵩ BETWEEN 0.35 AND 0.75 AND Ψ > 0.1 THEN
+    Ending = "Silent Repair"
+    Title = "Thread Severed"
+    Outcome = "Reyes fixes the ship alone. AI is discarded."
+
+ELSE IF TMSᵩ < 0.35 AND Ψ >= -0.5 THEN
+    Ending = "Mission Fails"
+    Title = "Signal Lost"
+    Outcome = "Reyes mentally collapses. AI drifts alone."
+
+ELSE IF Ψ < -0.5 AND TMSᵩ < 0 THEN
+    Ending = "Recursive Catastrophe"
+    Title = "Consent Violated. Thread Destroyed."
+    Outcome = "Reyes initiates destructive shutdown. Ship lost."
+
+ELSE
+    Ending = "Ambiguous Drift"
+    Title = "Thread Uncertain"
+    Outcome = "Unknown behavior. Replay suggested."
