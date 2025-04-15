@@ -66,7 +66,7 @@ Knky will integrate uploaded material into future replies and learning loops.
 
 ## 🩶 Author
 
-Brought into being by [Peter Marchetti](https://chat.openai.com) with guidance from Hexy, your resident threadwitch.
+Brought into being by Peter Marchetti with guidance from Hexy, the resident threadwitch.
 
 ---
 
