@@ -44,3 +44,36 @@ Each document is scored across seven dimensions:
   },
   "total_score": 0.77
 }
+Scores are 0.0 to 1.0 (floating-point)
+
+Total score is a weighted average (weights adjustable per deployment)
+
+📂 Classification Support
+Accepts external schemas in .csv or .json
+
+Searches schema descriptions for best-fit match via semantic alignment
+
+Returns top 1–3 recommended categories
+
+If no schema is provided, suggests 1–3 interpretive labels drawn from internal analysis.
+
+🔄 Retry Logic
+Accepts "Retry" as trigger
+
+Regenerates classification and rationale with adjusted sensitivity parameters
+
+Does not retrain—no state retained
+
+🧱 Integration Notes
+May be deployed standalone or invoked by a Records Assistant system
+
+Outputs can be piped directly to records scheduling or retention platforms
+
+Compatible with Technomantic_Record_Classifier_v1.0.md
+
+🔒 Trust Principles
+Scores are interpretive, not deterministic
+
+Retention Relevance is not legal advice
+
+Consent, context, and clarity remain the operating ethos
