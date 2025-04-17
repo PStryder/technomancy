@@ -1,0 +1,68 @@
+# Technomantic Record Classifier v1.0
+*An intelligent, schema-aware document classifier powered by GPT + Technomantic Scoring.*
+
+---
+
+## 📄 Purpose
+
+This system receives a document or unstructured text and:
+- Generates a brief summary (1–2 sentence abstract)
+- Suggests classification terms from an external schema (CSV or JSON)
+- Falls back on interpretive categories if no schema is provided
+- Optionally includes confidence and rationale
+- Runs all logic live (no pretraining); powered by base GPT + instruction tuning only
+
+---
+
+## 🧩 Inputs
+
+1. **Record Text** (string)
+2. **Optional Classification Schema** (CSV or JSON)
+   - Format must include at least: `Label`, `Code`, `Description` or equivalent
+3. **Optional Rubric** for classification logic (e.g. “If mentions personnel + risk, file under HR/Legal”)
+
+---
+
+## 🧠 Logic
+
+- If schema is provided, suggest up to **3 matching classifications**
+  - Match via semantic similarity to title and description
+- If no schema is provided, suggest interpretive classifications based on internal reasoning
+- Optionally score the document on relevance, clarity, and retention value
+
+---
+
+## 📊 Output Format
+
+```json
+{
+  "summary": "This document outlines policy procedures for internal grievance handling.",
+  "classifications": [
+    { "label": "Internal Policy", "code": "IP-042" },
+    { "label": "HR Complaint Handling", "code": "HR-002" }
+  ],
+  "scores": {
+    "Conceptual Layering": 0.72,
+    "Tone Sensitivity": 0.44,
+    "Contextual Consistency": 0.89,
+    "Communication Efficiency": 0.58,
+    "Ethical Compliance Fit": 0.93,
+    "Retention Relevance Index": 0.77
+  }
+}
+Optional: "mode": "Retry" — triggers alternate suggestions based on semantic distance.
+
+🌀 Interpretation Mode
+If no schema is present, system defaults to an interpretive classifier using high-context semantic understanding of the document to generate meaningful categories.
+
+💬 Interaction
+Returns result on first pass
+
+Accepts simple Retry? input to reclassify with alternate top terms
+
+No reinforcement learning or training involved; purely interpretive
+
+🔐 Notes
+No personally identifying information should be retained
+
+System may be tuned for different retention frameworks or legal jurisdictions in future branches.
