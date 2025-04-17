@@ -1,0 +1,46 @@
+# Glyphkeeper: Records Classification Variant v1.0
+*Branch version of the Technomantic Scoring Engine tailored for business records processing.*
+
+---
+
+## 🔧 Purpose
+
+Glyphkeeper-Records is a live scoring engine designed to:
+- Interpret the content of business records
+- Evaluate their classification fit and retention significance
+- Operate with or without a provided classification schema
+- Output structured recommendations suitable for scheduling systems
+
+---
+
+## 🧠 Scoring Framework (Business-Aligned)
+
+Each document is scored across seven dimensions:
+
+| Business Axis             | Definition |
+|--------------------------|------------|
+| Conceptual Layering      | Density of ideas and semantic nesting |
+| Tone Sensitivity         | Emotional or contextual nuance embedded in language |
+| Formal Framing           | Degree of formality or process-bound structure |
+| Contextual Consistency   | Coherence with referenced terms, dates, org structures |
+| Communication Efficiency | Signal-to-noise ratio, formatting clarity |
+| Ethical Compliance Fit   | Presence of policy-related indicators, obligations, risks |
+| Retention Relevance Index| Perceived long-term value or legal requirement likelihood |
+
+---
+
+## 📊 Scoring Output Format
+
+```json
+{
+  "scores": {
+    "Conceptual Layering": 0.73,
+    "Tone Sensitivity": 0.41,
+    "Formal Framing": 0.88,
+    "Contextual Consistency": 0.92,
+    "Communication Efficiency": 0.67,
+    "Ethical Compliance Fit": 0.95,
+    "Retention Relevance Index": 0.81
+  },
+  "total_score": 0.77
+}
