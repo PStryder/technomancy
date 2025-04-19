@@ -1,1 +1,36 @@
 
+🧠 Signalkeeper
+Signalkeeper is a prototype AI assistant designed to support Account Executives with fast, contextual feedback on active deals.
+
+It evaluates sales conversations, email threads, and transcripts to provide high-level insights, strategic suggestions, and early warning signs of risk or disengagement. Signalkeeper isn’t just a chatbot—it’s a judgment engine, tuned to the nuances of deal health, intent, and emotional tone.
+
+⚙️ What it Does
+Deal Analysis
+Paste in any sales transcript, email chain, or meeting note.
+Click Analyze to get:
+
+A high-level summary of deal health
+
+A suggested action to move it forward
+
+A risk flag if emotional or structural issues are detected
+
+Ongoing Dialogue
+After analyzing, use the chat box below to:
+
+Ask follow-up questions
+
+Talk through strategy
+
+Dig deeper into intent, objections, or tone
+
+Signalkeeper remembers the analysis and chat context during each thread.
+
+Thread Resets
+Each time you hit Analyze, Signalkeeper starts a fresh thread.
+The previous conversation is cleared, and a new insight cycle begins.
+
+🔒 A Note on Privacy
+This prototype does not store your inputs or responses.
+All analysis happens in the moment—once processed, the data is gone.
+Still, don’t paste in anything sensitive or confidential. This version is designed for early testing, not production use.
